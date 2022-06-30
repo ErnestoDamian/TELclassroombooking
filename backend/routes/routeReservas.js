@@ -7,4 +7,4 @@ var router = express.Router();
 
 
 router.post('agregar_reserva', ReservasController.agregar);
-router.get('/allReservas',ReservasController.getAll);
+/*router.get('/allReservas',ReservasController.getAll);*/
