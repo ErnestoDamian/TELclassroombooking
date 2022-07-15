@@ -15,7 +15,7 @@ var routesReservas = require('./routes/routeReservas');
 //rutas
 app.use('/profesores',routesProfesores);
 app.use('/alumnos',routesAlumnos);
-/*app.use('/reservas',routesReservas);*/
+app.use('/reservas',routesReservas);
 
 
 module.exports = app;

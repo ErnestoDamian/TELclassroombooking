@@ -26,8 +26,7 @@ function New_Twitt(){
   })
   return (
     <div>
-      <h3 className="center">Ingrese sus datos
-      </h3>
+      <h3 className="center">Ingrese sus datos</h3>
       
     </div>
   );

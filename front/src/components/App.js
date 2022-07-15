@@ -1,14 +1,14 @@
-import './assets/css/App.css';
+import '../assets/css/App.css';
 
 
 // Componentes
-import Barra from './components/Barra';
-import Router from './Router';
+import NavBar from './NavBar';
+import Router from '../Router'
 
 function App() {
   return (
     <div className="App">
-      <Barra />
+      <NavBar />
       <div className='center'>
         <Router />
       </div>

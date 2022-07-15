@@ -5,6 +5,7 @@ var ReservasController = require('../controllers/controllerReservas');
 
 var router = express.Router();
 
+router.post('/agregar_reserva', ReservasController.agregar);
+router.get('/allReservas', ReservasController.getAll);
 
-router.post('agregar_reserva', ReservasController.agregar);
-/*router.get('/allReservas',ReservasController.getAll);*/
+module.exports = router

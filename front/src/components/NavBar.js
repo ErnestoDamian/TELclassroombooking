@@ -11,6 +11,9 @@ class Barra extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/Login">Login</Nav.Link>
+              <Nav.Link href="/215">Horario Sala 215</Nav.Link>
+              <Nav.Link href="/213">Horario Sala 213</Nav.Link>
+              <Nav.Link href="/Reserva">Realizar Reserva</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
