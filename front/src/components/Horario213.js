@@ -3,7 +3,7 @@ import React from 'react'
 import { Table } from 'react-bootstrap'
 import axios from 'axios'
 
-function Horario215() {
+function Horario213() {
     const [loaded, setLoaded] = useState(false)
     const [horario, setHorario] = useState([])
     
@@ -381,4 +381,4 @@ function distribucionReservas (Reserva) {
     })
     return temp
 }
-export default Horario215;
+export default Horario213;
