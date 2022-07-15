@@ -7,7 +7,6 @@ function Horario215() {
     const [loaded, setLoaded] = useState(false)
     const [horario, setHorario] = useState([])
     
-
     useEffect(() => {
         const fetchData = async () => {
             if (!loaded) {
@@ -16,7 +15,6 @@ function Horario215() {
                     console.log("Resultado del axios")
                     console.log(result)
                     setHorario(distribucionReservas(result.data.reservas))
-                    console.log(horario)
                     setLoaded(true)
                 } catch (error) {
                     console.log(error)
@@ -28,6 +26,7 @@ function Horario215() {
     
     return (
         <Table striped bordered hover>
+            {console.log(horario)}
             <thead>
                 <tr>
                     <th>Bloque</th>
@@ -43,80 +42,80 @@ function Horario215() {
             <tbody>
                 <tr>
                     <td>1-2</td>
-                    {/* Mostrar reservas filas bloque1
+                    {/* Mostrar reservas filas bloque1*/}
                     <td>{horario.bloque1.lunes}</td>
                     <td>{horario.bloque1.martes}</td>
                     <td>{horario.bloque1.miercoles}</td>
                     <td>{horario.bloque1.jueves}</td>
                     <td>{horario.bloque1.viernes}</td>
                     <td>{horario.bloque1.sabado}</td>
-                    <td>{horario.bloque1.domingo}</td>*/}
+                    <td>{horario.bloque1.domingo}</td>
                 </tr>
                 <tr>
                     <td>3-4</td>
-                    {/* Mostrar reservas filas bloque2
+                    {/* Mostrar reservas filas bloque2*/}
                     <td>{horario.bloque2.lunes}</td>
                     <td>{horario.bloque2.martes}</td>
                     <td>{horario.bloque2.miercoles}</td>
                     <td>{horario.bloque2.jueves}</td>
                     <td>{horario.bloque2.viernes}</td>
                     <td>{horario.bloque2.sabado}</td>
-                    <td>{horario.bloque2.domingo}</td>*/}
+                    <td>{horario.bloque2.domingo}</td>
                 </tr>
                 <tr>
                     <td>5-6</td>
-                    {/* Mostrar reservas filas bloque3
+                    {/* Mostrar reservas filas bloque3*/}
                     <td>{horario.bloque3.lunes}</td>
                     <td>{horario.bloque3.martes}</td>
                     <td>{horario.bloque3.miercoles}</td>
                     <td>{horario.bloque3.jueves}</td>
                     <td>{horario.bloque3.viernes}</td>
                     <td>{horario.bloque3.sabado}</td>
-                    <td>{horario.bloque3.domingo}</td>*/}
+                    <td>{horario.bloque3.domingo}</td>
                 </tr>
                 <tr>
                     <td>7-8</td>
-                    {/* Mostrar reservas filas bloque4
+                    {/* Mostrar reservas filas bloque4*/}
                     <td>{horario.bloque4.lunes}</td>
                     <td>{horario.bloque4.martes}</td>
                     <td>{horario.bloque4.miercoles}</td>
                     <td>{horario.bloque4.jueves}</td>
                     <td>{horario.bloque4.viernes}</td>
                     <td>{horario.bloque4.sabado}</td>
-                    <td>{horario.bloque4.domingo}</td>*/}
+                    <td>{horario.bloque4.domingo}</td>
                 </tr>
                 <tr>
                     <td>9-10</td>
-                    {/* Mostrar reservas filas bloque5
+                    {/* Mostrar reservas filas bloque5*/}
                     <td>{horario.bloque5.lunes}</td>
                     <td>{horario.bloque5.martes}</td>
                     <td>{horario.bloque5.miercoles}</td>
                     <td>{horario.bloque5.jueves}</td>
                     <td>{horario.bloque5.viernes}</td>
                     <td>{horario.bloque5.sabado}</td>
-                    <td>{horario.bloque5.domingo}</td>*/}
+                    <td>{horario.bloque5.domingo}</td>
                 </tr>
                 <tr>
                     <td>11-12</td>
-                    {/* Mostrar reservas filas bloque6
+                    {/* Mostrar reservas filas bloque6*/}
                     <td>{horario.bloque6.lunes}</td>
                     <td>{horario.bloque6.martes}</td>
                     <td>{horario.bloque6.miercoles}</td>
                     <td>{horario.bloque6.jueves}</td>
                     <td>{horario.bloque6.viernes}</td>
                     <td>{horario.bloque6.sabado}</td>
-                    <td>{horario.bloque6.domingo}</td>*/}
+                    <td>{horario.bloque6.domingo}</td>
                 </tr>
                 <tr>
                     <td>13-14</td>
-                    {/* Mostrar reservas filas bloque7
+                    {/* Mostrar reservas filas bloque7*/}
                     <td>{horario.bloque7.lunes}</td>
                     <td>{horario.bloque7.martes}</td>
                     <td>{horario.bloque7.miercoles}</td>
                     <td>{horario.bloque7.jueves}</td>
                     <td>{horario.bloque7.viernes}</td>
                     <td>{horario.bloque7.sabado}</td>
-                    <td>{horario.bloque7.domingo}</td>*/}
+                    <td>{horario.bloque7.domingo}</td>
                 </tr>
             </tbody>
         </Table>
