@@ -5,9 +5,71 @@ import axios from 'axios'
 
 function Horario213() {
     const [loaded, setLoaded] = useState(false)
-    const [horario, setHorario] = useState([])
-    
-
+    const [horario, setHorario] = useState({
+        bloque1: {
+            lunes: "libre",
+            martes: "libre",
+            miercoles: "libre",
+            jueves: "libre",
+            viernes: "libre",
+            sabado: "libre",
+            domingo: "libre"
+        },
+        bloque2: {
+            lunes: "libre",
+            martes: "libre",
+            miercoles: "libre",
+            jueves: "libre",
+            viernes: "libre",
+            sabado: "libre",
+            domingo: "libre"
+        },
+        bloque3: {
+            lunes: "libre",
+            martes: "libre",
+            miercoles: "libre",
+            jueves: "libre",
+            viernes: "libre",
+            sabado: "libre",
+            domingo: "libre"
+        },
+        bloque4: {
+            lunes: "libre",
+            martes: "libre",
+            miercoles: "libre",
+            jueves: "libre",
+            viernes: "libre",
+            sabado: "libre",
+            domingo: "libre"
+        },
+        bloque5: {
+            lunes: "libre",
+            martes: "libre",
+            miercoles: "libre",
+            jueves: "libre",
+            viernes: "libre",
+            sabado: "libre",
+            domingo: "libre"
+        },
+        bloque6: {
+            lunes: "libre",
+            martes: "libre",
+            miercoles: "libre",
+            jueves: "libre",
+            viernes: "libre",
+            sabado: "libre",
+            domingo: "libre"
+        },
+        bloque7: {
+            lunes: "libre",
+            martes: "libre",
+            miercoles: "libre",
+            jueves: "libre",
+            viernes: "libre",
+            sabado: "libre",
+            domingo: "libre"
+        }
+    })
     useEffect(() => {
         const fetchData = async () => {
             if (!loaded) {
