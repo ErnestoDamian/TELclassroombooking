@@ -55,7 +55,7 @@ function Reserva() {
     }
     return (
         <div>
-            <h3 className='center'>Realice la resera</h3>
+            <h3 className='center'>Realice la Reserva</h3>
             <div className='Contenedor-Formulario'>
                 <Select
                     options={optionsdia}
@@ -93,7 +93,7 @@ function Reserva() {
                 />
                 <br />
                 <button onClick={handleclick} href='/215'>
-                    Activate Lasers
+                    Submit
                 </button>
             </div>
         </div>
